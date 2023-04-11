@@ -7,11 +7,14 @@
     tools:context=".ModificationActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".ModificationActivity"
-        tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="62dp">
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".ModificationActivity">
 
         <TextView
             android:id="@+id/textVille"
@@ -136,8 +139,10 @@
         android:id="@+id/textNom"
         android:layout_width="61dp"
         android:layout_height="30dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="211dp"
         android:text="Nom"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="211dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
